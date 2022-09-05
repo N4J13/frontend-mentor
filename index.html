@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <main class=" px-5  place-items-center grid  h-screen bg-verydarkblue " >
+        <div class="container grid place-items-center m-auto">
+            <div class="rounded-2xl max-w-[320px] w-full  bg-darkblue/50 p-4" id="rateCard">
+                <div class="rounded-full w-10 h-10 grid place-items-center bg-darkblue">
+                    <img src="./images/icon-star.svg" alt="">
+                </div>
+                <h3 class="text-white font-bold py-3 text-2xl"> How did we do?</h3>
+                <p class="text-lightgray pb-4  text-[15px]"> Please let us know how we did with your support request. All feedback is appreciated 
+                    to help us improve our offering!</p>
+                <div class="flex justify-between">
+                    <button class="select-btn">1</button>
+                    <button class="select-btn" >2</button>
+                    <button class="select-btn">3</button>
+                    <button class="select-btn">4</button>
+                    <button class="select-btn">5</button>
+                </div>
+                <div class="mt-5 ">
+                    <button id="submitBtn" class="grid w-full text-[15px] place-items-center lg:hover:bg-white lg:hover:text-orange py-2 rounded-3xl bg-orange text-white ">Submit</button>
+                </div>
+            </div>
+            <div class="rounded-2xl max-w-[320px] w-full hidden  bg-darkblue/50 p-4" id="thanksCard">
+                <div class="grid place-items-center mt-4 mb-5">
+                    <img src="./images/illustration-thank-you.svg" class="max-w-[140px]" alt="">
+                </div>
+                <div class="grid place-items-center mt-3 mb-4"><p class="text-orange pt-1 px-3 text-sm w-fit rounded-3xl bg-darkblue/50">You selected <span id="rating">5</span> out of 5</p></div>
+                
+                <div class="text-center">
+                    <h3 class="text-white font-bold py-3 text-2xl"> Thank You!</h3>
+                    <p class="text-lightgray pb-4  text-[15px]">  We appreciate you taking the time to give a rating. If you ever need more support, 
+                        don’t hesitate to get in touch!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+  
+  <footer class="text-center py-4">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Najib</a>.
+  </footer>
+  <script src="./script.js"></script>
+</body>
+</html>
