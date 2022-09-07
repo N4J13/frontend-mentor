@@ -1057,6 +1057,10 @@ video {
 }
 
 @media (min-width: 1536px){
+  .\32xl\:h-\[400px\]{
+    height: 400px;
+  }
+
   .\32xl\:px-32{
     padding-left: 8rem;
     padding-right: 8rem;
