@@ -645,6 +645,10 @@ video {
   height: 150px;
 }
 
+.h-\[400px\]{
+  height: 400px;
+}
+
 .max-h-52{
   max-height: 13rem;
 }
@@ -1049,6 +1053,13 @@ video {
   .xl\:px-28{
     padding-left: 7rem;
     padding-right: 7rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:px-32{
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 }
 
