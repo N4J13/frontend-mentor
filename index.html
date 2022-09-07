@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <main class="bg-mainbg md:h-screen h-full grid place-items-center">
+    <div class="container mx-auto my-5 md:py-0 xl:px-28 px-6 grid place-items-center">
+      <div class="rounded-md pb-6 md:pb-0  bg-cardbg grid auto-rows-auto  md:grid-cols-2 ">
+        <div class="relative  h-[200px] md:h-full md:order-2">
+          <img src="./images/image-header-mobile.jpg" class=" h-full w-full md:hidden rounded-t-md" alt="">
+          <img src="./images/image-header-desktop.jpg" class="hidden h-full w-full md:block md:rounded-tr-md md:rounded-br-md" alt="">
+          <div class="absolute h-full w-full rounded-t-md md:rounded-tl-none md:rounded-tr-md md:rounded-br-md left-0 top-0  bg-accent/70"></div>
+        </div>
+        <div class=" px-7  md:pt-20 md:pb-16 md:pl-16 md:pr-20 text-center md:text-left">
+          <h1 class="text-white text-[28px] md:text-4xl pt-8 md:pt-0 pb-7 leading-8  font-bold font-inter">Get <span class="text-accent">insights</span>  that help your business grow.</h1>
+          <p class="text-mainpara text-[15px] font-lexend">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+            experience, and overall efficiency.</p>
+          <div class="md:flex md:pt-14 md:justify-between">
+            <div class="pt-6 md:pt-0">
+              <h2 class="font-bold font-inter text-white text-[20px]">10k+ </h2>
+              <p class="uppercase text-sm text-mainpara font-lexend">companies</p>
+            </div>
+            <div class="pt-6 md:pt-0">
+              <h2 class="font-bold font-inter text-white text-[20px]">314 </h2>
+              <p class="uppercase text-sm text-mainpara font-lexend">templates</p>
+            </div>
+            <div class="pt-6 md:pt-0">
+              <h2 class="font-bold font-inter text-white text-[20px]">12M+ </h2>
+              <p class="uppercase text-sm text-mainpara font-lexend">queries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Najib</a>.
+  </footer>
+</body>
+</html>
