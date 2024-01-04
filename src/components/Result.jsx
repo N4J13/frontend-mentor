@@ -23,7 +23,7 @@ const Result = ({disabled,amountChangeHandler,peopleChangeHandler,total}) => {
           <h3 className="text-3xl text-lightGrayishCyan">$ {total.totalAmount}</h3>
         </div>
       </div>
-        <button disabled={disabled} className="block disabled:bg-[#0D686D] disabled:text-text bg-lightGrayishCyan hover:bg-lightCyan py-2 rounded-md w-full" onClick={resetHandler}>RESET</button>
+        <button disabled={!disabled} className="block disabled:bg-[#0D686D] disabled:text-text bg-lightGrayishCyan hover:bg-lightCyan py-2 rounded-md w-full" onClick={resetHandler}>RESET</button>
     </div>
   );
 };

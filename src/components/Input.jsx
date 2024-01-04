@@ -34,7 +34,6 @@ const Input = ({ value, onChange, label, svg }) => {
         <input
           className="bg-veryLightGrayishCyan focus:outline-2 focus:outline-lightGrayishCyan rounded-md z-10 text-2xl w-full text-right focus:outline-none focus:border-none p-2"
           type="text"
-          value={value}
           placeholder="0"
           onChange={onChange}
           required={true}
