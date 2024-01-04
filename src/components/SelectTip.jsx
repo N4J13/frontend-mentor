@@ -46,7 +46,6 @@ const SelectTip = ({ amount, people, getAmount }) => {
     }
   };
 
-  console.log(amount);
   return (
     <>
       <p className="text-md mt-8 text-text mb-3">Select Tip %</p>
