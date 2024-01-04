@@ -1,7 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const SelectTip = ({ amount, people, getAmount }) => {
   const [active, setActive] = useState(false);
+  useEffect(() => {
+    setActive(false);
+    getAmount("0.00", "0.00");
+  }, [amount, people]);
   const tip = [
     {
       id: 1,
@@ -25,20 +29,24 @@ const SelectTip = ({ amount, people, getAmount }) => {
     },
   ];
 
-  console.log(amount);
   const tipCalculatorHandler = (value, id) => {
-    if (amount == 0 && people == 0) {
+    if (amount === "" && people === "") {
       return;
     } else {
-      const totalAmount = ((amount + (amount * value) / 100) / people).toFixed(
-        2
-      );
+      const amount2 = parseFloat(amount);
+      const people2 = parseFloat(people);
+      const totalAmount = (
+        (amount2 + (amount2 * value) / 100) /
+        people2
+      ).toFixed(2);
       console.log(totalAmount);
-      const tipAmount = ((amount * value) / 100 / people).toFixed(2);
+      const tipAmount = ((amount2 * value) / 100 / people2).toFixed(2);
       getAmount(totalAmount, tipAmount);
       setActive(id);
     }
   };
+
+  console.log(amount);
   return (
     <>
       <p className="text-md mt-8 text-text mb-3">Select Tip %</p>

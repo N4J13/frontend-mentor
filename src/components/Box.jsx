@@ -4,8 +4,8 @@ import SelectTip from "./SelectTip";
 import Result from "./Result";
 
 const Box = () => {
-  const [amount, setAmount] = useState(0);
-  const [people, setPeople] = useState(0);
+  const [amount, setAmount] = useState("");
+  const [people, setPeople] = useState("");
   const [isDisabled, setIsDisabled] = useState(false);
   const [total, setTotal] = useState({
     totalAmount: "0.00",
@@ -46,8 +46,8 @@ const Box = () => {
           svg={true}
         />
         <SelectTip
-          amount={parseFloat(amount)}
-          people={parseFloat(people)}
+          amount={amount}
+          people={people}
           getAmount={getAmount}
         />
         <Input
