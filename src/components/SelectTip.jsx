@@ -30,7 +30,7 @@ const SelectTip = ({ amount, people, getAmount }) => {
   ];
 
   const tipCalculatorHandler = (value, id) => {
-    if (amount === "" && people === "") {
+    if (amount === "" || people === "") {
       return;
     } else {
       const amount2 = parseFloat(amount);
